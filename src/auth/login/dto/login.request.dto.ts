@@ -1,12 +1,9 @@
 import { IsNotEmpty } from 'class-validator';
 
-export class SignInRequestDTO {
+export class LoginRequestDTO {
   @IsNotEmpty()
   email: string;
 
   @IsNotEmpty()
   password: string;
-
-  @IsNotEmpty()
-  username: string;
 }
